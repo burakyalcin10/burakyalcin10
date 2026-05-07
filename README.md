@@ -17,8 +17,6 @@ burak@github:~$ status
 Learning in public, shipping small projects, improving every commit
 ```
 
-<h2 align="center">Now Playing</h2>
-
 <!--
   Spotify setup:
   Connected with Spotify GitHub Profile.
@@ -47,9 +45,3 @@ Learning in public, shipping small projects, improving every commit
 | [SarkiSozleriPlayer](https://github.com/burakyalcin10/SarkiSozleriPlayer) | A Python app that detects and synchronizes lyrics while MP3 files are playing. |
 | [DMPROJECT](https://github.com/burakyalcin10/DMPROJECT) | Fibonacci and Catalan path work for discrete mathematics. |
 | [portfolio-yalcinburak](https://github.com/burakyalcin10/portfolio-yalcinburak) | Personal portfolio site for projects and creative work. |
-
-<div align="center">
-
-![Burak's GitHub stats](https://github-readme-stats.vercel.app/api?username=burakyalcin10&show_icons=true&theme=github_dark&hide_border=true&rank_icon=github)
-
-</div>
