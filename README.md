@@ -1,19 +1,12 @@
-<h1 align="center">Burak Yalçın</h1>
+<h1 align="center">Burak Yalcin</h1>
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2600&pause=650&color=00F5A0&center=true&vCenter=true&width=760&height=75&lines=%3E+booting+Burak+OS...;%3E+Computer+Engineering+Student;%3E+Python+%7C+Java+%7C+Web+%7C+Algorithms;%3E+currently+building+cool+stuff" alt="Typing terminal animation" />
 </p>
 
-```txt
-burak@github:~$ whoami
-Computer Engineering student at Akdeniz University
-
-burak@github:~$ focus --now
-Algorithms, Python tools, web projects, and computer architecture experiments
-
-burak@github:~$ status
-Learning in public, shipping small projects, improving every commit
-```
+<p align="center">
+  <img src="assets/terminal.svg" alt="Animated terminal profile card" />
+</p>
 
 <!--
   Spotify setup:

@@ -1,0 +1,114 @@
+<svg width="900" height="230" viewBox="0 0 900 230" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Animated terminal profile card</title>
+  <desc id="desc">A terminal window with animated commands describing Burak Yalcin.</desc>
+  <style>
+    .window {
+      fill: #0d1117;
+      stroke: #30363d;
+      stroke-width: 1.5;
+    }
+
+    .glow {
+      filter: drop-shadow(0 0 12px rgba(0, 245, 160, 0.28));
+    }
+
+    .title {
+      fill: #7d8590;
+      font: 600 13px "Fira Code", "Cascadia Code", Consolas, monospace;
+    }
+
+    .prompt {
+      fill: #00f5a0;
+      font: 600 18px "Fira Code", "Cascadia Code", Consolas, monospace;
+    }
+
+    .cmd {
+      fill: #e6edf3;
+      font: 600 18px "Fira Code", "Cascadia Code", Consolas, monospace;
+    }
+
+    .out {
+      fill: #a5d6ff;
+      font: 500 17px "Fira Code", "Cascadia Code", Consolas, monospace;
+    }
+
+    .line {
+      opacity: 0;
+      animation: show 9s infinite;
+    }
+
+    .l1 { animation-delay: 0s; }
+    .l2 { animation-delay: .8s; }
+    .l3 { animation-delay: 2s; }
+    .l4 { animation-delay: 2.8s; }
+    .l5 { animation-delay: 4s; }
+    .l6 { animation-delay: 4.8s; }
+
+    .cursor {
+      fill: #00f5a0;
+      animation: blink .9s steps(2, start) infinite;
+    }
+
+    .scan {
+      opacity: .08;
+      animation: scan 4s linear infinite;
+    }
+
+    @keyframes show {
+      0%, 6% { opacity: 0; transform: translateY(6px); }
+      10%, 86% { opacity: 1; transform: translateY(0); }
+      100% { opacity: 0; transform: translateY(0); }
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    @keyframes scan {
+      from { transform: translateY(-180px); }
+      to { transform: translateY(230px); }
+    }
+  </style>
+
+  <rect x="10" y="10" width="880" height="210" rx="14" class="window glow"/>
+  <rect x="10" y="10" width="880" height="38" rx="14" fill="#161b22"/>
+  <path d="M10 38H890V52H10V38Z" fill="#161b22"/>
+  <circle cx="34" cy="30" r="6" fill="#ff5f56"/>
+  <circle cx="56" cy="30" r="6" fill="#ffbd2e"/>
+  <circle cx="78" cy="30" r="6" fill="#27c93f"/>
+  <text x="450" y="34" text-anchor="middle" class="title">burak@github ~/profile</text>
+
+  <rect x="28" y="68" width="844" height="28" fill="url(#scanGradient)" class="scan"/>
+
+  <g transform="translate(34 78)">
+    <text class="line l1" x="0" y="0">
+      <tspan class="prompt">burak@github:~$</tspan>
+      <tspan class="cmd"> whoami</tspan>
+    </text>
+
+    <text class="line l2 out" x="0" y="30">Computer Engineering student at Akdeniz University</text>
+
+    <text class="line l3" x="0" y="76">
+      <tspan class="prompt">burak@github:~$</tspan>
+      <tspan class="cmd"> focus --now</tspan>
+    </text>
+
+    <text class="line l4 out" x="0" y="106">Algorithms, Python tools, web projects, CPU architecture</text>
+
+    <text class="line l5" x="0" y="152">
+      <tspan class="prompt">burak@github:~$</tspan>
+      <tspan class="cmd"> status</tspan>
+    </text>
+
+    <text class="line l6 out" x="0" y="182">Learning in public, shipping small projects, improving every commit</text>
+    <rect class="cursor" x="720" y="164" width="10" height="21" rx="2"/>
+  </g>
+
+  <defs>
+    <linearGradient id="scanGradient" x1="28" y1="68" x2="872" y2="96" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00f5a0" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#00f5a0"/>
+      <stop offset="1" stop-color="#00f5a0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>
