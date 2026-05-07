@@ -1,7 +1,7 @@
 <h1 align="center">Burak Yalcin</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&duration=2600&pause=650&color=00F5A0&center=true&vCenter=true&width=760&height=75&lines=%3E+booting+Burak+OS...;%3E+Computer+Engineering+Student;%3E+Python+%7C+Java+%7C+Web+%7C+Algorithms;%3E+currently+building+cool+stuff" alt="Typing terminal animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2600&pause=650&color=00F5A0&center=true&vCenter=true&width=760&height=75&lines=%3E+booting+Burak+OS...;%3E+Computer+Engineering+Student;%3E+Python+%7C+Java+%7C+Web+%7C+Algorithms;%3E+currently+building+cool+stuff" alt="Typing terminal animation" />
 </p>
 
 <p align="center">
@@ -14,8 +14,8 @@
 -->
 
 <p align="center">
-  <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=t9qvzhye6k1uvgsf0bdeph3e9&redirect=true">
-    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=t9qvzhye6k1uvgsf0bdeph3e9&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false" alt="Spotify currently playing" />
+  <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31qrgxuw6l7cqhre5exmvbl5hnra&redirect=true">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31qrgxuw6l7cqhre5exmvbl5hnra&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false&profanity=false" alt="Spotify currently playing" />
   </a>
 </p>
 
