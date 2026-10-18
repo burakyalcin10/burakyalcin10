@@ -2,7 +2,7 @@
 
 - assets/field-{day,night}.svg: a cross-section of the field. Languages are the
   plots on the surface, each year's commits a layer of soil underneath.
-- assets/credits.svg: experience and community, rolling like film credits.
+- assets/credits.svg: community, education and programs, rolling like film credits.
 - README.md: the table between the recent:start / recent:end markers.
 
 Runs daily from .github/workflows/profile.yml. Standard library only.
@@ -16,7 +16,7 @@ import os
 import random
 import re
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from glyphs import Type
@@ -32,14 +32,11 @@ README = ROOT / "README.md"
 IGNORED_LANGUAGES = {"HTML", "CSS", "SCSS", "Sass", "Less", "Makefile", "Dockerfile",
                      "Shell", "Batchfile", "PowerShell", "Procfile"}
 TOP_LANGUAGES = 5
+# Languages describe what Burak writes now, so only repositories pushed this recently count.
+LANGUAGE_WINDOW_DAYS = 365
 RECENT_REPOS = 3
 
 CREDITS = [
-    ("Experience", [
-        ("Part-time software engineer", "SAN TSG", "Oct 2025 – Jun 2026"),
-        ("Software engineering intern", "SAN TSG", "Jul – Aug 2025"),
-        ("Educator and mentor", "T3 Foundation", "Since Oct 2023"),
-    ]),
     ("Community", [
         ("Chairman of the supervisory board,|former chairman of the board", "3Y",
          "Akdeniz Software, AI and Creativity community"),
@@ -136,8 +133,10 @@ def fetch():
 
 
 def summarize(repos, per_year):
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=LANGUAGE_WINDOW_DAYS)).isoformat()
+    active = [r for r in repos if r["pushedAt"] >= cutoff] or repos
     sizes = {}
-    for repo in repos:
+    for repo in active:
         for edge in repo["languages"]["edges"]:
             lang = edge["node"]["name"]
             if lang not in IGNORED_LANGUAGES:
@@ -257,6 +256,7 @@ def render_field(s, theme):
         mid = (a + b) / 2
         out.append(ty.text(lang, mid, surface - 40, "text-medium", 14, t["ink"], anchor="middle"))
         out.append(ty.text(f"{pct:.0f}%", mid, surface - 23, "text", 13.5, t["ink2"], anchor="middle"))
+    out.append(ty.text("languages in the last 12 months", x0, surface - 68, "text", 12.5, t["ink2"]))
 
     # the year labels, written on the soil
     for year, n, top, h, _ in layers:
@@ -278,7 +278,7 @@ def render_field(s, theme):
             + '<stop offset=".5" stop-color="#ffffff" stop-opacity="0"/><stop offset="1" stop-color="#000000" stop-opacity=".22"/></linearGradient>')
     desc = (f"{s['commits']} commits since {first_year}: "
             + ", ".join(f"{n} in {y}" for y, n in s["per_year"])
-            + ". Languages by code size: " + ", ".join(f"{l} {p:.0f}%" for l, p in s["languages"]) + ".")
+            + ". Languages by code size in the last 12 months: " + ", ".join(f"{l} {p:.0f}%" for l, p in s["languages"]) + ".")
     return frame(width, height, t["sky"], "\n".join(out), defs, "Burak's commits and languages", desc)
 
 

@@ -64,5 +64,5 @@
 </p>
 
 <p align="center">
-  <img src="assets/credits.svg" alt="Credits. Experience: part-time software engineer and software engineering intern at SAN TSG, educator and mentor at T3 Foundation. Community: 3Y, BİLMÖK, UBMK 2024. Education: computer engineering at Akdeniz University." />
+  <img src="assets/credits.svg" alt="Credits. Community: 3Y, BİLMÖK, UBMK 2024. Education: computer engineering at Akdeniz University." />
 </p>
