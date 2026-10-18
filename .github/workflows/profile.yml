@@ -1,0 +1,39 @@
+name: Update profile images
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/**
+      - .github/workflows/profile.yml
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Regenerate field, credits and Now Building table
+        env:
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+        run: |
+          if [ -z "$PROFILE_TOKEN" ]; then
+            echo "::error::Add a PROFILE_TOKEN secret (a read-only token from Burak's account) so private commits are counted."
+            exit 1
+          fi
+          python3 scripts/build_profile.py
+
+      - name: Commit if anything changed
+        run: |
+          git diff --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/field-day.svg assets/field-night.svg assets/credits.svg README.md
+          git commit -m "Update profile images"
+          git push

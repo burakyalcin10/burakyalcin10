@@ -1,12 +1,56 @@
-<h1 align="center">Burak Yalcin</h1>
-
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=2600&pause=650&color=00F5A0&center=true&vCenter=true&width=760&height=75&lines=%3E+booting+Burak+OS...;%3E+Computer+Engineering+Student;%3E+Python+%7C+Java+%7C+Web+%7C+Algorithms;%3E+currently+building+cool+stuff" alt="Typing terminal animation" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-night.svg">
+    <img src="assets/hero-day.svg" alt="Burak Yalçın, computer engineering student working on AI, full-stack and systems engineering" />
+  </picture>
 </p>
 
 <p align="center">
-  <img src="assets/terminal.svg" alt="Animated terminal profile card" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/field-night.svg">
+    <img src="assets/field-day.svg" alt="Burak's commits per year as layers of soil and his languages as plots on the surface, updated daily" />
+  </picture>
 </p>
+
+## Featured Projects
+
+| Project | What it is |
+| --- | --- |
+| [InternIQ](https://github.com/burakyalcin10/InternIQ) | AI-powered internship search and prep platform, layered with the OpenAI SDK, CrewAI, LangGraph and MCP. [Live demo](https://intern-iq-iota.vercel.app) |
+| [career-asistant-agent](https://github.com/burakyalcin10/career-asistant-agent) | An agent that answers employers on my behalf, with LLM-as-a-judge scoring and auto-revision. FastAPI and Gemini. |
+| [echo-chamber-ai](https://github.com/burakyalcin10/echo-chamber-ai) | Interactive AI artwork that maps covers of "Knockin' on Heaven's Door" as a 3D emotional galaxy. |
+| [TazelenmeApp](https://github.com/burakyalcin10/TazelenmeApp) | Student, attendance (RFID/NFC) and reporting platform for Tazelenme University's 60+ learners. |
+| [SarkiSozleriPlayer](https://github.com/burakyalcin10/SarkiSozleriPlayer) | A Python app that detects and synchronizes lyrics while MP3 files are playing. |
+| [DMPROJECT](https://github.com/burakyalcin10/DMPROJECT) | Fibonacci and Catalan path work for discrete mathematics. |
+| [portfolio-yalcinburak](https://github.com/burakyalcin10/portfolio-yalcinburak) | Personal portfolio site for projects and creative work. |
+
+## Now Building
+
+<!-- recent:start -->
+| Project | Language | Last push |
+| --- | --- | --- |
+| [obsidian-vault-skill](https://github.com/burakyalcin10/obsidian-vault-skill) | Python | 2026-09-25 |
+| [TazelenmeApp](https://github.com/burakyalcin10/TazelenmeApp) | TypeScript | 2026-07-21 |
+| [InternIQ](https://github.com/burakyalcin10/InternIQ) | Python | 2026-05-07 |
+<!-- recent:end -->
+
+## Tech Stack
+
+![Python](https://img.shields.io/badge/Python-2f5b3b?style=flat-square&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-2f5b3b?style=flat-square&logo=openjdk&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-2f5b3b?style=flat-square&logo=dotnet&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-2f5b3b?style=flat-square&logo=typescript&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-2f5b3b?style=flat-square&logo=springboot&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-2f5b3b?style=flat-square&logo=fastapi&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-2f5b3b?style=flat-square&logo=nextdotjs&logoColor=white)
+![Angular](https://img.shields.io/badge/Angular-2f5b3b?style=flat-square&logo=angular&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-2f5b3b?style=flat-square&logo=langchain&logoColor=white)
+![Pinecone](https://img.shields.io/badge/Pinecone-2f5b3b?style=flat-square)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-2f5b3b?style=flat-square&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-2f5b3b?style=flat-square&logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2f5b3b?style=flat-square&logo=docker&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-2f5b3b?style=flat-square)
+![Git](https://img.shields.io/badge/Git-2f5b3b?style=flat-square&logo=git&logoColor=white)
 
 <!--
   Spotify setup:
@@ -19,20 +63,6 @@
   </a>
 </p>
 
-## Tech Stack
-
-![Python](https://img.shields.io/badge/Python-0d1117?style=for-the-badge&logo=python&logoColor=3776AB)
-![Java](https://img.shields.io/badge/Java-0d1117?style=for-the-badge&logo=openjdk&logoColor=ED8B00)
-![JavaScript](https://img.shields.io/badge/JavaScript-0d1117?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![HTML5](https://img.shields.io/badge/HTML5-0d1117?style=for-the-badge&logo=html5&logoColor=E34F26)
-![CSS3](https://img.shields.io/badge/CSS3-0d1117?style=for-the-badge&logo=css3&logoColor=1572B6)
-![Git](https://img.shields.io/badge/Git-0d1117?style=for-the-badge&logo=git&logoColor=F05032)
-
-## Featured Projects
-
-| Project | What it is |
-| --- | --- |
-| [CPU-Emulator](https://github.com/burakyalcin10/CPU-Emulator) | A computer organization project focused on CPU behavior and instruction flow. |
-| [SarkiSozleriPlayer](https://github.com/burakyalcin10/SarkiSozleriPlayer) | A Python app that detects and synchronizes lyrics while MP3 files are playing. |
-| [DMPROJECT](https://github.com/burakyalcin10/DMPROJECT) | Fibonacci and Catalan path work for discrete mathematics. |
-| [portfolio-yalcinburak](https://github.com/burakyalcin10/portfolio-yalcinburak) | Personal portfolio site for projects and creative work. |
+<p align="center">
+  <img src="assets/credits.svg" alt="Credits. Experience: part-time software engineer and software engineering intern at SAN TSG, educator and mentor at T3 Foundation. Community: 3Y, BİLMÖK, UBMK 2024. Education: computer engineering at Akdeniz University." />
+</p>
