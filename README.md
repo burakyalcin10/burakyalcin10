@@ -29,8 +29,8 @@
 <!-- recent:start -->
 | Project | Language | Last push |
 | --- | --- | --- |
+| [TazelenmeApp](https://github.com/burakyalcin10/TazelenmeApp) | TypeScript | 2026-10-19 |
 | [obsidian-vault-skill](https://github.com/burakyalcin10/obsidian-vault-skill) | Python | 2026-09-25 |
-| [TazelenmeApp](https://github.com/burakyalcin10/TazelenmeApp) | TypeScript | 2026-07-21 |
 | [InternIQ](https://github.com/burakyalcin10/InternIQ) | Python | 2026-05-07 |
 <!-- recent:end -->
 
