@@ -29,9 +29,9 @@
 <!-- recent:start -->
 | Project | Language | Last push |
 | --- | --- | --- |
+| [bist-harness](https://github.com/burakyalcin10/bist-harness) | Python | 2026-11-17 |
 | [TazelenmeApp](https://github.com/burakyalcin10/TazelenmeApp) | TypeScript | 2026-10-19 |
 | [obsidian-vault-skill](https://github.com/burakyalcin10/obsidian-vault-skill) | Python | 2026-09-25 |
-| [InternIQ](https://github.com/burakyalcin10/InternIQ) | Python | 2026-05-07 |
 <!-- recent:end -->
 
 ## Tech Stack
